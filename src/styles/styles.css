@@ -1,0 +1,68 @@
+/* ПРОМО БЛОК */
+.promo{
+    display: flex;
+    padding-left: 2vw;
+    padding-right: 3vw;
+}
+/* Часть слева */
+.promo-content{
+    width: 35vw;
+    font-size: 0.7rem;
+}
+.promo-logo{
+    width: 30vw;
+    margin-bottom: 1vw;
+}
+.promo-text{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: 40vw;
+}
+.paw-img{
+    width: 5vw;
+    height: 5vw;
+}
+
+/* Карточки с данными */
+.promo-data{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    width: 100%;
+}
+
+.promo-data-el{
+    background-color: var(--beige);
+    border-radius: 1vw;
+    padding: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 9vw;
+    max-width: 9vw;
+    height: 6vw;
+
+    margin-top: 2vw;
+}
+
+.promo-data-num{
+    font-family: 'gochi';
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+}
+.promo-data-desc{
+    font-size: 0.5rem;
+    color: var(--dark-blue);
+}
+
+/* Часть справа */
+.promo-poster{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+}
+
+/* СЕКЦИЯ О НАС */
