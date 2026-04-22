@@ -66,3 +66,112 @@
 }
 
 /* СЕКЦИЯ О НАС */
+.about{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-left: 2vw;
+    gap: 5vw;
+}
+
+.about-content{
+    font-size: 0.7rem;
+    margin-top: 2vw;
+    width: 35vw;
+}
+
+#get-more{
+    margin-top: 2vw;
+    font-family: 'gochi';
+    font-size: 0.8rem;
+    color: var(--dark-blue);
+}
+.slide{
+    width: 35vw;
+    border-radius: 1vw;
+}
+
+/* КАРТОЧКИ С НОВОСТЯМИ */
+.news{
+    padding-left: 2vw;
+    margin-top: 2vw;
+}
+.news-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1vw;
+}
+.new-card{
+    font-size: 0.5rem;
+    background-color: var(--beige);
+    padding: 1vw;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    border-radius: 1vw;
+}
+.new-card h3{
+    color: var(--dark-blue);
+    font-size: 0.7rem;
+}
+.new-card-photos{
+    display: flex;
+    gap: 1vw;
+}
+.new-card-photos img{
+    width: 10vw;
+    border-radius: 0.5vw;
+}
+
+.new-card-date{
+    text-align: right;
+}
+
+/* СЕКЦИЯ НАЙДИ ДРУГА */
+.find{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.find-img{
+    width: 30vw;
+}
+.find-content p{
+    font-size: 0.6rem;
+    width: 40vw;
+    margin-bottom: 2vw;
+}
+
+/* СЕКЦИЯ ПОЖЕРТВОВАТЬ */
+.donate{
+   padding-left: 4vw;
+}
+.donate-wrapper{
+    display: flex;
+    gap: 2vw;
+}
+.donate-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 30vw;
+}
+.donate-send{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+.donate-banks{
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 2vw;
+}
+.bank{
+    width: 4vw;
+}
+.donate-btn{
+    width: 15vw; 
+}
+.text-input{
+    height: 8vw !important;
+}

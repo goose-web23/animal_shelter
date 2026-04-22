@@ -18,7 +18,7 @@
     box-sizing: border-box;
     font-family: 'century';
 }
-body{
+.body{
     display: flex;
     justify-content: space-between;
 }
@@ -28,6 +28,13 @@ body {
   max-width: 100vw;
   font-size: 2vw;
 }
+h2{
+    font-family: 'gochi';
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 1vw;
+}
+/* САЙДБАР */
 .sidebar{
     width: 16vw;
     flex-shrink: 0;
@@ -67,9 +74,12 @@ body {
     width: 2.5vw;
     height: 2.5vw;
 }
+
+/* ОБЩИЕ СТИЛИ КНОПОК */
 .my-btn{
     background-color: var(--pink);
     border-radius: 1vw;
+    border: none;
     font-size: 0.6rem;
     max-width: 20vw;
     display: flex;
@@ -77,9 +87,71 @@ body {
     justify-content: center;
     height: 2.5vw;
     padding: 0.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     color: black;
+    cursor: pointer;
 }
 .entry-btn{
     text-decoration: none;
 }
+/* ОБЩИЕ СТИЛИ ПОЛЕЙ */
+.my-input{
+    max-width: 30vw;
+    height: 3vw;
+    border-radius: 1vw;
+    border: none;
+    padding: 1vw;
+    background-color: var(--beige);
+    font-family: 'century';
+    font-size: 0.4rem;
+}
 
+/* ФУТЕР */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--beige);
+    height: 12vw;
+    margin-top: 5vw;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+}  
+.footer-info{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    font-size: 0.6rem;
+} 
+.footer-info-main{
+    display: flex;
+    gap: 2vw;
+}
+.footer-info-data{
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo{
+    width: 10vw;
+}
+
+/* правая часть */
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.footer-contact{
+    display: flex;
+    font-size: 0.6rem;
+    gap: 2vw;
+}
+.contact-icon{
+    width: 2vw;
+}

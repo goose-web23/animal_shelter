@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <link rel="icon" href="/src/images/promo_logo.png">
-    <link rel="stylesheet" href="./src/styles/sidebar.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
     <title>Буду рядом</title>
 </head>
 <body>
+    <div class="body">
     <aside class="sidebar">
         <div class="nav-links">
             <div class="nav-link">
@@ -64,8 +65,121 @@
             </div>
         </div>
         <section class="about">
-            
+            <div class="about-content">
+                <h2>О приюте</h2>
+                <p>Тут типа мы молодцы помогаем животным уже столько лет у нас куча животных и все рады все счастливы приходите забирайте не пожалеете+возможно краткая история с кнопкой читать далее как было на макете в 1 семестре</p>
+                <p id="get-more">Читать далее</p>
+            </div>
+            <div class="about-slider">
+                <img src="./src/images/photos/slide1.png" class="slide">
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>Новости</h2>
+            <div class="news-container">
+                <div class="new-card">
+                    <div class="new-card-text">
+                    <h3>Какой-то длинный заголовок</h3>
+                        <p>Какое-то начало статьи типа у нас прошёл праздник в честь собак вот фотки приходите смотрите</p> 
+                    </div>
+                    <div class="new-card-photos">
+                        <img src="./src/images/photos/new1.png">
+                        <img src="./src/images/photos/new2.png">
+                    </div>
+                    <p class="new-card-date">12 декабря 2025</p>
+                </div>
+                <div class="new-card">
+                    <div class="new-card-text">
+                    <h3>Какой-то длинный заголовок</h3>
+                        <p>Какое-то начало статьи типа у нас прошёл праздник в честь собак вот фотки приходите смотрите</p> 
+                    </div>
+                    <div class="new-card-photos">
+                        <img src="./src/images/photos/new1.png">
+                        <img src="./src/images/photos/new2.png">
+                    </div>
+                    <p class="new-card-date">12 декабря 2025</p>
+                </div>
+                <div class="new-card">
+                    <div class="new-card-text">
+                    <h3>Какой-то длинный заголовок</h3>
+                        <p>Какое-то начало статьи типа у нас прошёл праздник в честь собак вот фотки приходите смотрите</p> 
+                    </div>
+                    <div class="new-card-photos">
+                        <img src="./src/images/photos/new1.png">
+                        <img src="./src/images/photos/new2.png">
+                    </div>
+                    <p class="new-card-date">12 декабря 2025</p>
+                </div>
+                <div class="new-card">
+                    <div class="new-card-text">
+                    <h3>Какой-то длинный заголовок</h3>
+                        <p>Какое-то начало статьи типа у нас прошёл праздник в честь собак вот фотки приходите смотрите</p> 
+                    </div>
+                    <div class="new-card-photos">
+                        <img src="./src/images/photos/new1.png">
+                        <img src="./src/images/photos/new2.png">
+                    </div>
+                    <p class="new-card-date">12 декабря 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="find">
+            <img src="./src/images/find_dog.png" class="find-img">
+            <div class="find-content">
+                <h2>Найдите друга</h2>
+                <p>Тут типа мы молодцы помогаем животным уже столько лет у нас куча животных и все рады все счастливы приходите забирайте не пожалеете+возможно краткая история </p>
+                <button class="my-btn">Перейти</button>
+            </div>
+        </section>
+
+        <section class="donate">
+            <h2>Пожертвовать</h2>
+            <div class="donate-wrapper">
+               <div class="donate-form">
+                    <input type="number" placeholder="Сумма" class="my-input">
+                    <textarea placeholder="Комментарий" class="text-input my-input"></textarea>
+                </div>
+                <div class="donate-send">
+                    <div class="donate-banks">
+                        <img src="./src/images/сбер.png" class="bank">
+                        <img src="./src/images/т банк.png" class="bank">
+                        <img src="./src/images/альфа.png" class="bank">
+                    </div>
+                    <button class="donate-btn my-btn">Продолжить</button>
+                </div> 
+            </div>
         </section>
     </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-info">
+                <div class="footer-info-main">
+                    <img src="./src/images/logo.png" class="footer-logo">
+                    <div class="footer-info-data">
+                        <p>Приют для животных</p>
+                        <p>г.Чита ул.Восточная 30</p>
+                    </div>
+                </div>
+                <p>Какие-то цифры регистрации</p>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-contact">
+                    <img src="./src/images/icons/phone.png" class="contact-icon">
+                    <p>+7-800-800-80-80</p>
+                </div>
+                <div class="footer-contact">
+                    <img src="./src/images/icons/pochta.png" class="contact-icon">
+                    <p>pochta@mail.ru</p>
+                </div>
+                <div class="footer-contact">
+                    <img src="./src/images/icons/telega.png" class="contact-icon">
+                    <p>budu_ryadom_chita</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
