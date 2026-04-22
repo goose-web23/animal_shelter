@@ -1,0 +1,67 @@
+.content{
+    margin-top: 2vw;
+    padding-left: 4vw;
+}
+
+.main-wrapper{
+    display: flex;
+    gap: 5vw;
+    margin-left: 2vw;
+}
+
+.pet-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    font-size: 0.7rem;
+    width: 30vw;
+    margin-top: 3vw;
+}
+.pet-images{
+    display: flex;
+    gap: 2vw;
+}
+.pet-images img{
+    width: 15vw;
+    border-radius: 1vw;
+}
+
+
+/* форма */
+.pets-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    gap: 2vw;
+    width: 40vw;
+}
+
+.pets-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    gap: 1vw;
+}
+
+.pets-form button{
+    width: 15vw;
+    height: 3vw;
+    font-size: 0.6rem;
+}
+
+.pets-form input{
+    width: 30vw;
+    height: 3.5vw;
+    font-size: 0.5rem;
+}
+.pets-form textarea{
+    width: 30vw;
+    height: 7vw;
+}
+
+.warning{
+    font-size: 0.5rem;
+}

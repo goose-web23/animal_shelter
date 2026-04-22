@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="./src/styles/profile.css">
     <link rel="icon" href="/src/images/promo_logo.png">
     <link rel="stylesheet" href="./src/styles/main.css">
     <title>Буду рядом</title>
@@ -37,9 +37,83 @@
     </aside>
 
     <main class="content">
- 
+        <div class="main-wrapper">
+            <div class="left-column">
+                <div class="profile-info">
+                    <div class="info-row">
+                        <p>Фамилия Имя</p>
+                        <p>16.02.2007</p>
+                    </div>
+                    <div class="info-row">
+                        <p>pochta@mail.ru</p>
+                        <p>+7-000-000-00-00</p>
+                    </div>
+                    <button class="my-btn">Редактировать профиль</button>
+                </div>
+                <div class="applies">
+                    <h3>Мои заявки</h3>
+                    <div class="apply">
+                        <p class="apply-pet">Собака, 3г</p>
+                        <p class="date">16 янв</p>
+                        <p class="apply-status">Одобрена</p>
+                    </div>
+                    <div class="apply">
+                        <p class="apply-pet">Собака, 3г</p>
+                        <p class="date">16 янв</p>
+                        <p class="apply-status">Одобрена</p>
+                    </div>
+                </div>
+                <div class="settings">
+                    <h3>Тема</h3>
+                    <div class="theme-buttons">
+                        <button class="theme-toggle dark">Тёмная</button>
+                        <button class="theme-toggle light">Светлая</button>
+                    </div>
+                    <p>Сменить пароль</p>
+                    <button class="my-btn exit">Выйти</button>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="applies">
+                    <h3>Уведомления</h3>
+                    <div class="apply">
+                        <p class="apply-pet">Заявка одобрена</p>
+                        <p class="date">16 янв</p>
+                        <img class="close" src="./src/images/icons/close.png">
+                    </div>
+                    <div class="apply">
+                        <p class="apply-pet">Фестиваль чего-то там</p>
+                        <p class="date">16 янв</p>
+                        <img class="close" src="./src/images/icons/close.png">
+                    </div>
+                    <div class="apply">
+                        <p class="apply-pet">Фестиваль чего-то там</p>
+                        <p class="date">16 янв</p>
+                        <img class="close" src="./src/images/icons/close.png">
+                    </div>
+                </div>
+                <section class="donate">
+                    <h3>Пожертвовать</h3>
+                    <div class="donate-wrapper">
+                    <div class="donate-form">
+                            <input type="number" placeholder="Сумма" class="my-input">
+                            <textarea placeholder="Комментарий" class="text-input my-input"></textarea>
+                        </div>
+                        <div class="donate-send">
+                            <div class="donate-banks">
+                                <img src="./src/images/сбер.png" class="bank">
+                                <img src="./src/images/т банк.png" class="bank">
+                                <img src="./src/images/альфа.png" class="bank">
+                            </div>
+                            <button class="donate-btn my-btn">Продолжить</button>
+                        </div> 
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
     </div>
+
     <footer class="footer">
         <div class="footer-wrapper">
             <div class="footer-info">

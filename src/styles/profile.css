@@ -1,0 +1,143 @@
+.content{
+    margin-top: 2vw;
+    padding-left: 4vw;
+}
+
+.main-wrapper{
+    display: flex;
+    gap: 5vw;
+    margin-left: 2vw;
+}
+
+h3{
+    font-size: 1rem;
+    font-family: 'gochi';
+    margin-bottom: 1vw;
+    color: var(--dark-blue);
+}
+/* Информация профиля */
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--beige);
+    padding: 2vw;
+    border-radius: 1vw;
+    margin-bottom: 2vw;
+}
+.info-row{
+    font-size: 0.65rem;
+    display: flex;
+    width: 25vw;        
+    justify-content: space-between;
+}
+
+/* Заявки */
+.apllies{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 30vw;
+}
+
+.apply{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    background-color: var(--beige);
+    font-size: 0.7rem;
+    width: 35vw;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+}
+
+.apply-pet{
+    font-size: 0.6rem;
+}
+.apply-status, .date{
+    font-size: 0.5rem;
+    color: var(--dark-blue);
+}
+
+
+/* Кнопки */
+.theme-toggle{
+    display: flex;
+    flex-direction: column;
+}
+.theme-buttons{
+    display: flex;
+    gap: 2vw;
+}
+.theme-toggle{
+    border-radius: 1vw;
+    border: none;
+    font-size: 0.6rem;
+    max-width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 3vw;
+    padding: 0.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: black;
+    cursor: pointer;
+}
+.theme-toggle.dark{
+    background-color: var(--light-blue);
+}
+.theme-toggle.light{
+    background-color: var(--pink);
+}
+
+.exit{
+    width: 15vw;
+    height: 3vw;
+}
+.settings p{
+    font-size: 0.6rem;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+/* Уведомления */
+.close{
+    width: 1vw;
+    cursor: pointer;
+}
+
+/* СЕКЦИЯ ПОЖЕРТВОВАТЬ */
+.donate-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.donate-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 30vw;
+}
+.donate-send{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+.donate-banks{
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 2vw;
+}
+.bank{
+    width: 3vw;
+}
+.donate-btn{
+    width: 15vw; 
+}
+.text-input{
+    height: 8vw !important;
+}

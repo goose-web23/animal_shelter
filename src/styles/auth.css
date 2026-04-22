@@ -1,0 +1,68 @@
+.auth-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+}
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    gap: 2vw;
+}
+.welcome{
+    text-align: center;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 30vw;
+}
+.welcome h3{
+    font-size: 1 rem;
+    color: var(--dark-blue);
+}
+.auth-form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+}
+.auth-form-input input{
+    width: 25vw;
+    height: 4vw;
+    font-size: 0.6rem;
+    color: black;
+}
+.auth-form-input button{
+    width: 20vw;
+    height: 3vw;
+}
+.entry-link{
+    font-size: 0.6rem;
+}
+.entry-link a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin-left: 1vw;
+}
+.entry-with{
+    display: flex;
+    gap: 2vw;
+}
+.entry-el{
+    width: 3vw;
+    cursor: pointer;
+}
+
+
+.auth-poster.reg{
+    width: 40vw;
+}
+.auth-poster.log{
+    width: 40vw;
+    transform: scaleX(-1);
+}
+

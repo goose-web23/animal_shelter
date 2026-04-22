@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/auth.css">
+    <link rel="stylesheet" href="./src/styles/apply.css">
     <link rel="icon" href="/src/images/promo_logo.png">
     <link rel="stylesheet" href="./src/styles/main.css">
     <title>Буду рядом</title>
@@ -37,28 +37,27 @@
     </aside>
 
     <main class="content">
-        <section class="auth-wrapper">
-            <div class="auth-poster">
-                <img src="./src/images/promo_dog.png" class="auth-poster log">
-            </div>
-            <div class="auth-form">
-                <div class="welcome">
-                    <h3>Добро пожаловать!</h3>
-                    <p>тут пару приветстенных слов мы вас рады видеть</p>
+        <h2>Приютите животное</h2>
+        <div class="main-wrapper">
+            <div class="pet-info">
+                <p>Описание питомца, с какого момента он в приюте, какой характерВозраст:Пол:Кличка:....</p>
+                <div class="pet-images">
+                    <img class="pet-img" src="./src/images/photos/border1.png">
+                    <img class="pet-img" src="./src/images/photos/border2.png">
                 </div>
-                <form class="auth-form-input">
-                    <input type="email" placeholder="email" class="my-input">
-                    <input type="password" placeholder="Пароль" class="my-input">
+            </div>
+            <div class="pets-form-wrapper">
+                <p>Ваши данные</p>
+                <form class="pets-form">
+                    <input type="text" placeholder="Полное ФИО" class="my-input">
+                    <input type="text" placeholder="Телефон" class="my-input">
+                    <input type="date" placeholder="Дата рождения" class="my-input">
+                    <textarea placeholder="Комментарий" class="my-input comment"></textarea>
+                    <p class="warning">С Вами свяжутся в течение 3432 часов и что-то ещё спросят описание звонка </p>
                     <button type="submit" class="my-btn">Авторизироваться</button>
                 </form>
-                <p class="entry-link">Нет аккаунта?<span><a href=".//register.html">Зарегистрироваться</a></span></p>
-                <div class="entry-with">
-                    <img src="./src/images/вк.png" class="entry-el">
-                    <img src="./src/images/гугл.png" class="entry-el">
-                    <img src="./src/images/яндекс.png" class="entry-el">
-                </div>
             </div>
-        </section>
+        </div>
     </main>
     </div>
 

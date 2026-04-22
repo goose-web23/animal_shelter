@@ -1,0 +1,70 @@
+.main-info{
+    display: grid;
+    grid-template-columns: 40vw 30vw;
+    margin-top: 5vw;
+    padding-left: 4vw;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.short-info{
+    display: flex;
+    flex-direction: column;
+}
+.info-cards{
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 2vw;
+}
+.info-card{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--beige);
+    border-radius: 1vw;
+    width: 10vw;
+    font-size: 0.7rem;
+}
+
+.info-card h3{
+    font-family: 'gochi';
+    font-size: 1.3rem;
+    color: var(--dark-blue);
+}
+.send{
+    height: 3vw !important;   
+}
+
+.description{
+    font-size: 0.6rem;
+    width: 38vw;
+}
+
+/* правая колонка */
+.right-column{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.right-column img{
+    width: 30vw;
+    border-radius: 1vw;
+}
+
+/* фотки */
+.photo-gallery{
+    padding-left: 4vw;
+    display: flex;
+    gap: 2vw;
+    margin-top: 3vw;
+}
+.photo-gallery img{
+    width: 22vw;
+    border-radius: 1vw;
+}

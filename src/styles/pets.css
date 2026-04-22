@@ -1,0 +1,93 @@
+.search-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vw;
+    width: 10vw;
+    margin-top: 3vw;
+    padding-left: 4vw;
+}
+
+.search-input{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    gap: 1vw;
+}
+.search-input input{
+    width: 20vw;
+    font-size: 0.6rem;
+}
+.search-btn{
+    width: 2vw;
+    height: 2vw;
+}
+
+.filters{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    gap: 3vw;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    min-width: 6vw;
+    max-width: 10vw;
+    background-color: var(--pink);
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+.filter.active{
+    background-color: var(--light-blue);
+}
+
+/* сетка карточек */
+.pets-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3vw;
+    padding-left: 4vw; 
+    row-gap: 2vw; 
+}
+
+/* карточка */
+.pet-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vw;
+    background-color: var(--beige);
+    width: 15vw; 
+    cursor: pointer;    
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-left: 1vw;
+    padding: 1vw;
+}
+.card-img{
+    width: 15vw;
+    border-radius: 1vw;
+}
+.card-name-gender{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;     
+}
+.gender-icon {
+    width: 1.5vw;
+    height: auto;
+}
+
+.card-pet-info{
+    font-size: 0.65rem;
+}
+.card-date{
+    font-size: 0.6rem;
+}

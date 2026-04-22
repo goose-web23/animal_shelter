@@ -1,0 +1,42 @@
+.content{
+    margin-top: 2vw;
+    padding-left: 4vw;
+}
+
+.main-wrapper{
+    display: flex;
+    gap: 2vw;
+}
+.apllies{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 30vw;
+}
+.applies h3{
+    font-size: 1.2rem;
+    font-family: 'gochi';
+    margin-bottom: 1vw;
+}
+.apply{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    background-color: var(--beige);
+    font-size: 0.7rem;
+    width: 35vw;
+    border-radius: 1vw;
+    margin-bottom: 2vw;
+}
+.date{
+    color: var(--dark-blue);
+
+}
+.pet-cards{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    width: 40vw;
+    gap: 2vw;      
+}
+
