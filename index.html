@@ -14,27 +14,32 @@
         <div class="nav-links">
             <div class="nav-link">
                 <img src="/src/images/icons/home.svg" alt="">
-                <p>Главная</p>
+                <a href="./index.html">Главная</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/pet.svg" alt="">
-                <p>Животные</p>
+                <a href="./all_pets.html">Животные</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/user.svg" alt="">
-                <p>Профиль</p>
+                <a href="./profile.html">Профиль</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/worker.svg" alt="">
-                <p>Работникам</p>
+                <a href="./worker_page.html">Работникам</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/money.svg" alt="">
-                <p>Пожертвовать</p>
+                <a href="#donate">Пожертвовать</a>
             </div>
         </div>
         <a href="./login.html" class="my-btn entry-btn">Войти</a>
     </aside>
+
+    <div class="mobile-header">
+        <img src="./src/images/logo.png" class="mobile-logo">
+        <img src="./src/images/icons/menu.png" class="burger" id="burger">
+    </div>
 
     <main class="content">
         <div class="promo">
@@ -64,6 +69,37 @@
                 <img src="./src/images/promo_dog.png" class="promo-poster">
             </div>
         </div>
+        <div class="mobile-promo">
+            <div class="mobile-promo-content">
+                <div class="mobile-promo-main">
+                    <img src="./src/images/promo_logo.png" class="promo-logo">
+                    <div class="mobile-promo-text">
+                        <img src="./src/images/paw_pink.png" class="paw-img">
+                        <p>Приют для животных в городе Чита с отличными условиями содержания. Каждый второй питомец находит себе хозяина</p>
+                    </div>
+                </div>
+                <div class="mobile-promo-poster">
+                    <img src="./src/images/promo_dog.png" class="promo-poster">
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-promo-data">
+            <div class="mobile-promo-data-el">
+                <p class="mobile-promo-num">10</p>
+                <p class="mobile-promo-desc">Лет в работе</p>
+            </div>
+            <div class="mobile-promo-data-el">
+                <p class="mobile-promo-num">123+</p>
+                <p class="mobile-promo-desc">Животных нашли дом</p>
+            </div>
+            <div class="mobile-promo-data-el">
+                <p class="mobile-promo-num">123</p>
+                <p class="mobile-promo-desc">Содержится в приюте</p>
+            </div>
+            <img src="./src/images/paw_blue.png" class="paw-img blue-paw">
+        </div>
+
         <section class="about">
             <div class="about-content">
                 <h2>О приюте</h2>
@@ -122,6 +158,7 @@
                     </div>
                     <p class="new-card-date">12 декабря 2025</p>
                 </div>
+                <p id="get-more">Показать больше</p>
             </div>
         </section>
 
@@ -134,7 +171,7 @@
             </div>
         </section>
 
-        <section class="donate">
+        <section id="donate" class="donate">
             <h2>Пожертвовать</h2>
             <div class="donate-wrapper">
                <div class="donate-form">
@@ -163,7 +200,6 @@
                         <p>г.Чита ул.Восточная 30</p>
                     </div>
                 </div>
-                <p>Какие-то цифры регистрации</p>
             </div>
             <div class="footer-contacts">
                 <div class="footer-contact">
@@ -180,6 +216,7 @@
                 </div>
             </div>
         </div>
+        <p class="footer-number">Какие-то цифры регистрации</p>
     </footer>
 </body>
 </html>

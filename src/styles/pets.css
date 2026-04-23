@@ -35,7 +35,7 @@
     align-items: center;
     font-size: 0.6rem;
     min-width: 6vw;
-    max-width: 10vw;
+    max-width: 40vw;
     background-color: var(--pink);
     padding: 1vw 3vw 1vw 3vw;
     border-radius: 1vw;
@@ -90,4 +90,88 @@
 }
 .card-date{
     font-size: 0.6rem;
+}
+
+
+.mobile-search-input{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-search-input{
+        display: block;
+    }
+    .mobile-search-input input{
+        width: 60vw;
+        border-radius: 3vw;
+        height: 8vw;
+        font-size: 1.7rem;
+        padding: 2vw;
+    }
+    .search-input{
+        display: none;
+    }
+    .search-btn{
+        display: none;
+    }
+    .mobile-logo{
+        display: none;
+    }
+
+
+    .search-line{
+        display: flex;
+        width: 100vw;
+    }
+    .filters{
+        width: 90vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .filter{
+        width: 60vw !important;
+        height: 7vw;
+        font-size: 1.5rem;
+        border-radius: 2vw;
+    }
+
+    .pets-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;   
+        margin-top: 7vw;
+    }
+
+    .pet-card{
+        display: flex;
+        gap: 3vw;
+        flex-direction: row !important;
+        width: 80vw;
+        height: 30vw;   
+        border-radius: 3vw;
+    }
+    .card-img{
+        width: 35vw;
+        border-radius: 3vw;
+
+    }
+    .card-content{
+        padding: 2vw;
+        gap: 2vw;
+    }
+    .card-name-gender{
+        display: flex;
+        width: 35vw;
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+    .gender-icon{
+        width: 4vw;
+    }
+    .card-pet-info{
+        font-size: 1.7rem;
+    }
+    .card-date{
+        font-size: 1.6rem;
+    }
 }

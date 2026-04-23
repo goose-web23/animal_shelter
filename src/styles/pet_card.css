@@ -68,3 +68,88 @@
     width: 22vw;
     border-radius: 1vw;
 }
+
+
+.mobile-photos{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .content{
+        padding: 0 !important;
+    }
+    .main-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .pet-photo{
+        display: none;
+    }
+    .right-column{
+        display: none;
+    }
+    .photo-gallery{
+        display: none;
+    }
+
+    .left-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pet-name{
+        order: 1;
+        font-size: 2.5rem;
+        font-family: 'century';
+    }
+    .info-cards{
+        order: 2;
+    }
+    .description{
+        order: 3;
+    }
+    .send{
+        order: 4;
+        width: 50vw;
+        height: 10vw !important;
+        font-size: 2rem;
+        border-radius: 4vw;
+        margin-top: 3vw;
+    }
+
+    /* карточки */
+    .info-cards{
+        display: flex;
+        gap: 4vw;
+    }
+    .info-card{
+        width: 25vw;
+        height: 15vw;
+        border-radius: 3vw;
+        font-size: 1.7rem;
+    }
+    .info-heading{
+        font-size: 2.5rem !important;
+    }
+
+    .description{
+        font-size: 1.6rem;
+        width: 90vw;
+    }
+
+
+    /* фотки слайдер */
+    .mobile-photos{
+        display: flex;
+        margin-bottom: 2vw;
+    }
+    .slide{
+        width: 100vw;
+        padding-left: 0;
+    }
+
+}

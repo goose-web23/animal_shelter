@@ -1,12 +1,13 @@
 .content{
     margin-top: 2vw;
-    padding-left: 4vw;
+    padding-left: 4vw !important;
 }
 
 .main-wrapper{
     display: flex;
     gap: 5vw;
     margin-left: 2vw;
+    padding-left: 14vw !important; 
 }
 
 h3{
@@ -76,7 +77,7 @@ h3{
     border-radius: 1vw;
     border: none;
     font-size: 0.6rem;
-    max-width: 20vw;
+    max-width: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,4 +141,102 @@ h3{
 }
 .text-input{
     height: 8vw !important;
+}
+
+@media (max-width: 768px) {
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-info{
+        width: 90vw;
+        gap: 4vw;
+        height: 30vw;
+        border-radius: 3vw;
+        padding: 1vw;
+    }
+    .profile-info button{
+        height: 7vw;
+    }
+    .info-row{
+        font-size: 1.7rem;
+        width: 60vw;
+        gap: 3vw;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+    /* настройки */
+    .theme-toggle{
+        width: 30vw;
+        height: 8vw;
+        border-radius: 2vw;
+        font-size: 1.7rem;  
+    }
+
+    .settings p{
+        font-size: 1.7rem;
+    }
+    .exit{
+        width: 30vw;
+        height: 7vw !important;
+        margin-top: 3vw;    
+        font-size: 1.7rem !important;
+    }
+    /* заявки */
+     .applies{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        margin-top: 2vw;    
+    }
+    .apply{
+        width: 85vw;
+        padding: 2vw;
+        height: 14vw;
+        border-radius: 4vw;
+        padding: 2vw;   
+    }
+    .apply-pet{
+        font-size: 1.7rem;
+    }
+    .date, .apply-status{
+        font-size: 1.5rem;
+    }
+    .close{
+        width: 3vw;
+        margin-right: 2vw;
+    }
+
+    /* пожертвования */
+
+    .donate{
+        margin-top: 3vw;
+    }
+    .my-input{
+        width: 90vw;
+        height: 10vw;
+        font-size: 1.6rem;
+        border-radius: 3vw;
+        padding: 2vw;
+    }
+    .text-input{
+        height: 20vw !important;
+    }
+    .donate-banks{
+        gap: 5vw;
+        margin-top: 3vw;
+    }
+    .bank{
+        width: 10vw;
+    }
+    .donate-btn{
+        width: 30vw;
+        height: 7vw !important;
+        margin-top: 3vw;    
+        font-size: 1.7rem !important;
+    }
 }

@@ -90,6 +90,26 @@
     border-radius: 1vw;
 }
 
+@media (max-width: 768px) {
+    .about{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-content{
+        font-size: 1.6rem;
+        width: 90%;
+    }
+    h2{
+        font-size: 3.2rem !important;
+    }
+    #get-more{
+        font-size: 2.3rem;
+    }
+    .slide{
+        width: 90vw;
+        border-radius: 3vw;
+    }
+}
 /* КАРТОЧКИ С НОВОСТЯМИ */
 .news{
     padding-left: 2vw;
@@ -126,7 +146,33 @@
 .new-card-date{
     text-align: right;
 }
+@media (max-width: 768px) {
+    .news{
+        margin-top: 8vw;
+    }
+    .news-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2vw; 
+        margin-top: 2vw;  
+    }
+    .new-card{
+        width: 80vw; 
+        padding: 2vw;
+        font-size: 1.5rem;
+        border-radius: 3vw;
+        gap: 2vw;
+    }
+    .new-card-photos img{
+        width: 35vw;
+        border-radius: 2vw;
+    }
 
+    h3{
+        font-size: 2rem !important;
+    }
+}
 /* СЕКЦИЯ НАЙДИ ДРУГА */
 .find{
     display: flex;
@@ -141,7 +187,27 @@
     width: 40vw;
     margin-bottom: 2vw;
 }
-
+@media (max-width: 768px) {
+    .find{
+        width: 100%;
+    }
+    .find-img{
+        width: 40vw;
+    }
+    .find-content{
+        width: 50vw;
+    }
+    .find-content button{
+        width: 30vw !important;
+        height: 5vw;
+        border-radius: 2vw;
+    }
+    .find-content p{
+        font-size: 1.5rem;
+        width: 50vw;
+    }
+  
+}
 /* СЕКЦИЯ ПОЖЕРТВОВАТЬ */
 .donate{
    padding-left: 4vw;
@@ -174,4 +240,38 @@
 }
 .text-input{
     height: 8vw !important;
+}
+
+@media (max-width: 768px) {
+   .donate{
+        width: 100%;
+        margin-top: 5vw;
+   }
+   .donate-form{
+        width: 45vw;
+   }
+   .donate-form input{
+        width: 40vw;
+        height: 5vw;
+        font-size: 1.5rem;
+   }
+   .text-input{
+        width: 40vw !important;
+        height: 15vw !important;
+        font-size: 1.5rem !important;
+   }
+   .my-input{
+        width: 50vw;
+   }
+   .donate-btn{
+        width: 30vw;
+        border-radius: 2vw;
+   }
+   .donate-banks{
+        gap: 3vw;
+        margin-bottom: 2vw;
+   }
+   .bank{
+        width: 10vw;
+   }
 }

@@ -6,6 +6,7 @@
 .main-wrapper{
     display: flex;
     gap: 2vw;
+    padding-left: 14vw;
 }
 .apllies{
     display: flex;
@@ -17,6 +18,9 @@
     font-size: 1.2rem;
     font-family: 'gochi';
     margin-bottom: 1vw;
+}
+h2{
+    padding-left: 14vw;
 }
 .apply{
     display: flex;
@@ -34,9 +38,51 @@
 
 }
 .pet-cards{
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 40vw;
     gap: 2vw;      
 }
+
+@media (max-width: 768px) {
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vw;
+        padding-left: 3vw !important;
+    }
+    .content{
+        padding-left: 2vw !important;
+    }
+    .pet-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-logo{
+        display: block;
+    }
+    h2{
+        font-size: 3rem !important;
+        padding-left: 2vw;
+    }
+    h3{
+        font-size: 3rem !important;
+        color: var(--dark-blue);
+    }
+    /* зявки */
+    .applies{
+        width: 100vw;
+        gap: 9vw;
+        margin-top: 5vw;    
+    }
+    .apply{
+        width: 80vw;
+        height: 14vw;
+        border-radius: 4vw;
+        font-size: 1.6rem;
+        padding: 2vw;   
+    }
+}
+
+
 

@@ -51,6 +51,7 @@ h2{
     flex-direction: column;
     gap: 3vw;
 }
+
 .content{
     flex: 1;
     padding-left: 18vw;
@@ -69,6 +70,10 @@ h2{
     align-items: center;
     gap: 1vw;
     font-size: 0.6rem;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
 }
 .nav-link img{
     width: 2.5vw;
@@ -97,7 +102,7 @@ h2{
 }
 /* ОБЩИЕ СТИЛИ ПОЛЕЙ */
 .my-input{
-    max-width: 30vw;
+    max-width: 50vw;
     height: 3vw;
     border-radius: 1vw;
     border: none;
@@ -156,3 +161,173 @@ h2{
 .contact-icon{
     width: 2vw;
 }
+/* адаптив для футера */
+@media (max-width: 768px) {
+    .footer-info{
+        font-size: 1.4rem;
+        width: 50vw;
+    }
+    .footer-info-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contacts{
+        width: 50vw; 
+    }
+    .footer-contact{
+        font-size: 1.4rem; 
+    }
+    .contact-icon{
+        width: 5vw;
+    }
+    .footer-logo{
+        width: 25vw;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        height: 30vw;   
+    }
+}
+@media (min-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2vw;
+    }
+    .footer-number{
+        font-size: 0.5rem;
+        margin-top: 1vw;
+    }
+    .footer-info-main{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        font-size: 0.6rem;
+    }
+}
+
+
+
+
+.mobile-header{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+    padding-left: 5vw;
+    padding-right: 7vw;
+}
+.mobile-logo{
+    width: 35vw;
+    transform: rotate(6deg);
+}
+.burger{
+    width: 8vw;
+}
+.mobile-promo{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-promo-data{
+    display: none;
+}
+@media (max-width: 768px) {
+    /* основные */
+    .my-btn{
+        min-width: 15vw;
+        max-width: 65vw !important;
+        height: 5vw;
+        font-size: 1.5rem;
+        border-radius: 2vw;
+    }
+    .my-input{
+        max-width: 80vw !important;
+        width: 30vw;
+    }
+    .body{
+        display: block;
+    }
+    .main-wrapper{
+        padding-left: 0 !important;
+    }
+    .sidebar{
+        display: none;
+        width: 0vw;
+    }
+    .content{
+        padding-left: 0vw !important;
+        width: 100%;
+    }
+    .mobile-header{
+        display: flex;
+    }
+    .paw-img{
+        display: none;
+    }
+    .promo{
+        display: none;
+    }
+    
+    /* промо-блок */
+    .mobile-promo{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-promo-poster img{
+        width: 50vw;
+    }
+    .promo-logo{
+        width: 45vw;
+        z-index: 0;
+    }
+    .mobile-promo-main{
+        width: 45vw;
+    }
+    .mobile-promo-text{
+        font-size: 1.5rem;
+        width: 50vw;
+        z-index: 10;
+        padding-left: 2vw;
+    }
+    .mobile-promo-content{
+        display: flex;
+        width: 100vw;
+    }
+    /* карточки с цифрами */
+    .mobile-promo-data{
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+        width: 100%;
+        margin-bottom: 2vw;
+    }
+    .mobile-promo-data-el{
+        width: 28vw;
+        height: 20vw;
+        background-color: var(--beige);
+        padding: 2vw;
+        border-radius: 3vw;
+        color: var(--dark-blue);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-promo-num{
+        font-size: 3.5rem;
+        font-family: 'gochi';
+    }
+    .mobile-promo-desc{
+        font-size: 1.5rem;
+    }
+}
+

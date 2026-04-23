@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/apply.css">
     <link rel="icon" href="/src/images/promo_logo.png">
     <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/apply.css">
     <title>Буду рядом</title>
 </head>
 <body>
@@ -14,27 +14,32 @@
         <div class="nav-links">
             <div class="nav-link">
                 <img src="/src/images/icons/home.svg" alt="">
-                <p>Главная</p>
+                <a href="./index.html">Главная</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/pet.svg" alt="">
-                <p>Животные</p>
+                <a href="./all_pets.html">Животные</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/user.svg" alt="">
-                <p>Профиль</p>
+                <a href="./profile.html">Профиль</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/worker.svg" alt="">
-                <p>Работникам</p>
+                <a href="./worker_page.html">Работникам</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/money.svg" alt="">
-                <p>Пожертвовать</p>
+                <a href="./index.html#donate">Пожертвовать</a>
             </div>
         </div>
         <a href="./login.html" class="my-btn entry-btn">Войти</a>
     </aside>
+
+    <div class="mobile-header">
+        <img src="./src/images/logo.png" class="mobile-logo">
+        <img src="./src/images/icons/menu.png" class="burger" id="burger">
+    </div>
 
     <main class="content">
         <h2>Приютите животное</h2>
@@ -54,7 +59,7 @@
                     <input type="date" placeholder="Дата рождения" class="my-input">
                     <textarea placeholder="Комментарий" class="my-input comment"></textarea>
                     <p class="warning">С Вами свяжутся в течение 3432 часов и что-то ещё спросят описание звонка </p>
-                    <button type="submit" class="my-btn">Авторизироваться</button>
+                    <button type="submit" class="my-btn"></button>
                 </form>
             </div>
         </div>
@@ -71,7 +76,7 @@
                         <p>г.Чита ул.Восточная 30</p>
                     </div>
                 </div>
-                <p>Какие-то цифры регистрации</p>
+                
             </div>
             <div class="footer-contacts">
                 <div class="footer-contact">
@@ -88,6 +93,7 @@
                 </div>
             </div>
         </div>
+        <p class="footer-number">Какие-то цифры регистрации</p>
     </footer>
 </body>
 </html>
