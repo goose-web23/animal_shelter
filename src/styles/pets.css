@@ -97,7 +97,13 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .body{
+        padding-top: 5vw;
+    }
+    .content{
+        padding-top: 5vw;
+    }
     .mobile-search-input{
         display: block;
     }
@@ -173,5 +179,95 @@
     }
     .card-date{
         font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .body{
+        padding-top: 5vw;
+    }
+    .content{
+        padding-top: 5vw;
+    }
+    .mobile-search-input{
+        display: block;
+    }
+    .mobile-search-input input{
+        width: 60vw;
+        border-radius: 3vw;
+        height: 8vw;
+        font-size: 1.7rem;
+        padding: 2vw;
+    }
+    .search-input{
+        display: none;
+    }
+    .search-btn{
+        display: none;
+    }
+    .mobile-logo{
+        display: none;
+    }
+
+
+    .search-line{
+        display: flex;
+        width: 100vw;
+    }
+    .filters{
+        width: 90vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .filter{
+        width: 60vw !important;
+        height: 7vw;
+        font-size: 1.5rem;
+        border-radius: 2vw;
+    }
+
+    .pets-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80vw;
+        gap: 5vw;   
+        margin-top: 7vw;
+    }
+
+    .pet-card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 1vw;
+        background-color: var(--beige);
+        width: 40vw; 
+        height: 60vw;
+        cursor: pointer;    
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        padding: 3vw;
+    }
+    .card-img{
+        width: 40vw;
+        border-radius: 1vw;
+    }
+    .card-name-gender{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.7rem;     
+    }
+    .gender-icon {
+        width: 3.5vw;
+        height: auto;
+    }
+
+    .card-pet-info{
+        font-size: 1.4rem;
+    }
+    .card-date{
+        font-size: 1.4rem;
     }
 }

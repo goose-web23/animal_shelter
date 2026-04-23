@@ -38,7 +38,35 @@
 
     <div class="mobile-header">
         <img src="./src/images/logo.png" class="mobile-logo">
-        <img src="./src/images/icons/menu.png" class="burger" id="burger">
+        <img class="burger" id="burger-btn" src="./src/images/icons/menu.png">
+    </div>
+
+    <div id="burger-menu" class="burger-menu">
+        <div class="burger-header">
+            <img class="burger" id="close-btn" src="./src/images/icons/close.png">
+        </div>
+        <div class="nav-links">
+            <div class="nav-link">
+                <img class="nav-icon" src="/src/images/icons/home.svg" alt="">
+                <a href="./index.html">Главная</a>
+            </div>
+            <div class="nav-link">
+                <img class="nav-icon" src="/src/images/icons/pet.svg" alt="">
+                <a href="./all_pets.html">Животные</a>
+            </div>
+            <div class="nav-link">
+                <img class="nav-icon" src="/src/images/icons/user.svg" alt="">
+                <a href="./profile.html">Профиль</a>
+            </div>
+            <div class="nav-link">
+                <img class="nav-icon" src="/src/images/icons/worker.svg" alt="">
+                <a href="./worker_page.html">Работникам</a>
+            </div>
+            <div class="nav-link">
+                <img class="nav-icon" src="/src/images/icons/money.svg" alt="">
+                <a href="#donate">Пожертвовать</a>
+            </div>
+        </div>
     </div>
 
     <main class="content">
@@ -218,5 +246,7 @@
         </div>
         <p class="footer-number">Какие-то цифры регистрации</p>
     </footer>
+
+    <script src="./src/script.js" defer></script>
 </body>
 </html>

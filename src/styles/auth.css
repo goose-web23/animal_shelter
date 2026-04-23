@@ -72,7 +72,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .auth-wrapper{
         flex-direction: column;
     }
@@ -122,5 +122,58 @@
     }
     .entry-el{
         width: 10vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .auth-wrapper{
+        flex-direction: column;
+    }
+    .auth-poster.log{
+        display: none;
+    }
+    .mobile-logo{
+        display: block;
+        width: 70vw !important;
+        margin-bottom: 2vw;
+    }
+
+    .auth-form{
+        width: 90vw;
+        gap: 3vw;
+    }
+    .welcome{
+        font-size: 1.5rem;
+        width: 90vw;
+    }
+
+    .auth-form-input{
+        gap: 3vw;
+    }
+    .auth-form-input input{
+        width: 85vw;
+        height: 10vw;
+        border-radius: 3vw;
+        font-size: 1.5rem;
+        padding-left: 2vw;
+    }
+
+    .auth-form-input button{
+        width: 80vw;
+        height: 7vw;
+        border-radius: 3vw;
+        font-size: 1.5rem;
+        padding-left: 2vw;
+    }
+    .entry-link{
+        font-size: 1.3rem;
+        margin-top: 2vw;
+    }
+    .entry-with{
+        gap: 5vw;
+        margin-bottom: 2vw;
+    }
+    .entry-el{
+        width: 5vw;
     }
 }

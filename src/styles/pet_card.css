@@ -39,6 +39,7 @@
 }
 .send{
     height: 3vw !important;   
+    width: 30vw !important;
 }
 
 .description{
@@ -74,7 +75,7 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .content{
         padding: 0 !important;
     }
@@ -114,7 +115,7 @@
     }
     .send{
         order: 4;
-        width: 50vw;
+        width: 50vw !important;
         height: 10vw !important;
         font-size: 2rem;
         border-radius: 4vw;
@@ -152,4 +153,56 @@
         padding-left: 0;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .left-column{
+        width: 50vw;
+    }
+    .pet-name{
+        font-size: 3rem;
+    }
+    .info-cards{
+        display: flex;
+        gap: 2vw;
+    }
+    .info-card{
+        width: 20vw;
+        height: 10vw;
+        border-radius: 3vw;
+        font-size: 1rem;
+    }
+    .info-heading{
+        font-size: 1.5rem !important;
+    }
+
+    .description{
+        font-size: 0.9rem;
+        width: 50vw;
+    }
+
+    .send{
+        order: 4;
+        width: 30vw !important;
+        height: 5vw !important;
+        font-size: 1rem;
+        border-radius: 2vw;
+    }
+
+    /*  */
+    .right-column{
+        margin-top: 10vw;
+    }
+    .main-info{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5vw;
+    }
+    .pet-photo{
+        width: 35vw !important;
+    }
+    .photo-gallery img{
+        width: 28vw !important;
+    }
 }

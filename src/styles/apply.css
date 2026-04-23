@@ -2,11 +2,14 @@
     margin-top: 2vw;
     padding-left: 4vw;
 }
-
+h2{
+    padding-left: 16vw;
+}
 .main-wrapper{
     display: flex;
     gap: 5vw;
     margin-left: 2vw;
+    padding-left: 14vw; 
 }
 
 .pet-info{
@@ -66,7 +69,7 @@
     font-size: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .content{
         padding-left: 0 !important;
     }
@@ -116,5 +119,71 @@
         width: 60vw;
         height: 7vw;
         font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .pet-info{
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        padding-left: 2vw;
+        width: 80vw;
+    }
+    .pet-info p{
+        font-size: 1.3rem;
+        width: 60vw;
+    }
+    .pet-img{
+        display: none;
+    }
+    .pet-img.tablet{
+        display: block;
+        width: 30vw;
+    }
+    h2{
+        padding-left: 4vw;
+        font-size: 2rem;
+    }
+
+    /* форма */
+
+    .pets-form-wrapper{
+        justify-content: flex-start;
+        align-items: start;
+        font-size: 1.3rem;
+        padding-left: 2vw;
+    }
+    .pets-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pets-form input{
+        width: 40vw;
+        height: 7vw;
+        font-size: 1.3rem;
+        border-radius: 2vw;
+        padding: 2vw;
+    }
+    .pets-form textarea{
+        width: 40vw;
+        height: 20vw;
+        font-size: 1.2rem;
+        padding: 2vw;
+        border-radius: 2vw;
+    }
+    .warning{
+        font-size: 1.3rem;
+        width: 45vw !important;
+    }
+    .pets-form button{
+        width: 60vw;
+        height: 5vw;
+        font-size: 1.2rem;
+        border-radius: 2vw;
     }
 }

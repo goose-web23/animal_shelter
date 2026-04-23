@@ -32,6 +32,15 @@
     width: 100%;
 }
 
+.promo-data-num{
+    font-family: 'gochi';
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+}
+.promo-data-desc{
+    font-size: 0.5rem;
+    color: var(--dark-blue);
+}
 .promo-data-el{
     background-color: var(--beige);
     border-radius: 1vw;
@@ -42,21 +51,11 @@
     flex-direction: column;
     text-align: center;
     width: 9vw;
-    max-width: 9vw;
     height: 6vw;
 
     margin-top: 2vw;
 }
 
-.promo-data-num{
-    font-family: 'gochi';
-    font-size: 1.2rem;
-    color: var(--dark-blue);
-}
-.promo-data-desc{
-    font-size: 0.5rem;
-    color: var(--dark-blue);
-}
 
 /* Часть справа */
 .promo-poster{
@@ -64,6 +63,49 @@
     justify-content: center;
     width: 40vw;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* промо блок */
+    .mobile-promo{
+        display: none;
+    }
+    .promo{
+        display: flex;
+        width: 100vw;
+        gap: 5vw;
+    }
+    .promo-logo{
+        width: 40vw;
+        margin-left: 3vw;
+    }
+    .promo-poster{
+        width: 55vw;
+    }
+    .promo-text{
+        width: 50vw;
+        margin-left: 3vw;
+    }
+    .promo-text p{
+        font-size: 1rem;
+        width: 40vw;
+    }
+
+    .promo-data{
+        margin-left: 3vw;
+        width: 50vw;
+    }
+    .promo .promo-data .promo-data-el{
+        width: 40vw !important;
+        max-width: 40vw !important;
+        height: 10vw;
+    }
+    .promo-data-num{
+        font-size: 2rem;
+    }
+    .promo-data-desc{
+        font-size: 0.8rem;
+    }
+}
+
 
 /* СЕКЦИЯ О НАС */
 .about{
@@ -84,13 +126,20 @@
     font-family: 'gochi';
     font-size: 0.8rem;
     color: var(--dark-blue);
+    display: none;
 }
+@media (max-width: 767px) {
+    #get-more{
+       display: block; 
+    }
+}
+
 .slide{
     width: 35vw;
     border-radius: 1vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .about{
         flex-direction: column;
         width: 100%;
@@ -110,6 +159,30 @@
         border-radius: 3vw;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   .about{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-content{
+        font-size: 1.2rem;
+        width: 90%;
+    }
+    h2{
+        font-size: 2.5rem !important;
+    }
+    #get-more{
+        font-size: 1.5rem;
+    }
+    .slide{
+        width: 90vw;
+        border-radius: 3vw;
+    }
+}
+
+
+
 /* КАРТОЧКИ С НОВОСТЯМИ */
 .news{
     padding-left: 2vw;
@@ -146,7 +219,7 @@
 .new-card-date{
     text-align: right;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .news{
         margin-top: 8vw;
     }
@@ -173,6 +246,31 @@
         font-size: 2rem !important;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   .news-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+   }
+   .new-card{
+        width: 45vw; 
+        padding: 2vw;
+        font-size: 1rem;
+        border-radius: 3vw;
+        gap: 2vw;
+    }
+    .new-card-photos img{
+        width: 20vw;
+        border-radius: 2vw;
+    }
+
+    h3{
+        font-size: 1.4rem !important;
+    }
+    #get-more{
+        margin-left: 2vw;
+    }
+}
 /* СЕКЦИЯ НАЙДИ ДРУГА */
 .find{
     display: flex;
@@ -187,7 +285,7 @@
     width: 40vw;
     margin-bottom: 2vw;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .find{
         width: 100%;
     }
@@ -207,6 +305,28 @@
         width: 50vw;
     }
   
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .find{
+        width: 100%;
+    }
+    .find-img{
+        width: 45vw;
+    }
+    .find-content{
+        width: 50vw;
+    }
+    .find-content button{
+        width: 40vw;
+        height: 5vw;
+        border-radius: 2vw;
+        font-size: 1rem;
+    }
+    .find-content p{
+        font-size: 1rem;
+        width: 50vw;
+    }
 }
 /* СЕКЦИЯ ПОЖЕРТВОВАТЬ */
 .donate{
@@ -242,7 +362,7 @@
     height: 8vw !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
    .donate{
         width: 100%;
         margin-top: 5vw;
@@ -275,3 +395,43 @@
         width: 10vw;
    }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .donate{
+        width: 100%;
+        margin-top: 5vw;
+   }
+   .donate-form{
+        width: 45vw;
+   }
+   .donate-form input{
+        width: 40vw;
+        height: 5vw;
+        font-size: 1rem;
+        padding: 2vw;
+   }
+   .text-input{
+        width: 40vw !important;
+        height: 15vw !important;
+        font-size: 1rem !important;
+        padding: 2vw !important;   
+   }
+   .my-input{
+        width: 50vw;
+   }
+   .donate-btn{
+        width: 30vw !important;
+        height: 5vw !important;
+        border-radius: 2vw;
+        font-size: 1rem !important;
+   }
+   .donate-banks{
+        gap: 3vw;
+        margin-bottom: 2vw;
+   }
+   .bank{
+        width: 7vw;
+   }
+}
+
+
