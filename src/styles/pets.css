@@ -39,7 +39,12 @@
     background-color: var(--pink);
     padding: 1vw 3vw 1vw 3vw;
     border-radius: 1vw;
+
     cursor: pointer;
+    transition: transform .2s;
+}
+.filter:hover{
+    transform: scale(1.02);
 }
 .filter.active{
     background-color: var(--light-blue);
@@ -61,7 +66,12 @@
     border-radius: 1vw;
     background-color: var(--beige);
     width: 15vw; 
-    cursor: pointer;    
+    cursor: pointer; 
+    
+    transition: transform .2s;
+}
+.pet-card:hover{
+    transform: scale(1.02);
 }
 .card-content{
     display: flex;

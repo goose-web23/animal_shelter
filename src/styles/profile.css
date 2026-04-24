@@ -135,6 +135,12 @@ h3{
 }
 .bank{
     width: 3vw;
+    cursor: pointer;
+
+    transition: transform .2s;
+}
+.bank:hover{
+    transform: scale(1.1);
 }
 .donate-btn{
     width: 15vw; 
@@ -341,6 +347,7 @@ h3{
     }
     .bank{
         width: 7vw;
+        cursor: pointer;
     }
     .donate-btn{
         width: 30vw;

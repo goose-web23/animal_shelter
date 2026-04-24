@@ -14,7 +14,7 @@
         <div class="nav-links">
             <div class="nav-link">
                 <img src="/src/images/icons/home.svg" alt="">
-                <a href="./index.html">Главная</a>
+                <a class="page-active" href="./index.html">Главная</a>
             </div>
             <div class="nav-link">
                 <img src="/src/images/icons/pet.svg" alt="">
@@ -48,7 +48,7 @@
         <div class="nav-links">
             <div class="nav-link">
                 <img class="nav-icon" src="/src/images/icons/home.svg" alt="">
-                <a href="./index.html">Главная</a>
+                <a class="page-active" href="./index.html">Главная</a>
             </div>
             <div class="nav-link">
                 <img class="nav-icon" src="/src/images/icons/pet.svg" alt="">
@@ -135,7 +135,12 @@
                 <p id="get-more">Читать далее</p>
             </div>
             <div class="about-slider">
-                <img src="./src/images/photos/slide1.png" class="slide">
+                <div class="slider" id="slider">
+                    <img class="slide" src="./src/images/photos/slide1.png">
+                    <img class="slide" src="./src/images/photos/рэсси2.png">
+                </div>
+        <button class="slider-btn prev" onclick="prevSlide()"><img src="./src/images/slider-arrow.png"></button>
+        <button class="slider-btn next" onclick="nextSlide()"><img src="./src/images/slider-arrow.png"></button>
             </div>
         </section>
 

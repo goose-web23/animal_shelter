@@ -87,10 +87,19 @@ h2{
 .nav-link a{
     text-decoration: none;
     color: black;
+
+    transition: color 0.3s ease;
+}
+.nav-link a:hover{
+    color: var(--light-blue);
+    font-weight: 500;
 }
 .nav-link img{
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2vw;
+    height: 2vw;
+}
+.page-active{
+    color: var(--light-blue) !important;
 }
 
 /* ОБЩИЕ СТИЛИ КНОПОК */
@@ -109,6 +118,15 @@ h2{
     padding-right: 2vw;
     color: black;
     cursor: pointer;
+
+    transition: background-color 0.3s ease;
+    transition: transform .2s;
+}
+
+.my-btn:hover{
+    background-color: var(--light-blue);
+    color: white;
+    transform: scale(1.04);
 }
 .entry-btn{
     text-decoration: none;
@@ -124,6 +142,10 @@ h2{
     font-family: 'century';
     font-size: 0.4rem;
     color: black;
+}
+
+.my-input:focus{
+    outline-color: var(--light-blue);
 }
 
 /* ФУТЕР */
@@ -424,9 +446,11 @@ h2{
     background-color: var(--beige);
 
     flex-direction: column;
+
 }
 .burger-menu.active{
     display: flex;
+    z-index: 1000;
 }
 .burger-header{
     display: flex;
