@@ -34,8 +34,7 @@ function showSlide(ind) {
         slider.style.transform = `translateX(-${current * 90}vw)`;
     }else{
         slider.style.transform = `translateX(-${current * 30}vw)`;
-    }
-    
+    }   
 }
 function prevSlide() {
     current = (current - 1 + slides.length) % slides.length
@@ -46,3 +45,23 @@ function nextSlide() {
     showSlide(current)
 }
 showSlide(0)
+// //////////////////////////////////
+const aboutCont = document.querySelector('.about-text');
+const showMoreAbout = document.getElementById('get-more-about');
+
+let isOpenAbout = false;
+
+showMoreAbout.addEventListener('click', function () {
+    if (!isOpenAbout) {
+        aboutCont.innerHTML += `<p class="added-text">
+        В вольерах созданы чистые и тёплые условия.
+        Все животные социализированы — мы знаем характер каждого и честно рассказываем будущим владельцам. После усыновления не бросаем: консультируем по кормлению, воспитанию и лечению</p>`;
+
+        showMoreAbout.textContent = 'Скрыть';
+        isOpenAbout = true;
+    } else {
+        aboutCont.querySelector('.added-text').remove();
+        showMoreAbout.textContent = 'Читать далее';
+        isOpenAbout = false;
+    }
+});

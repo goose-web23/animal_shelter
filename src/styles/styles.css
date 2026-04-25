@@ -109,8 +109,8 @@
 
 /* СЕКЦИЯ О НАС */
 .about{
-    display: flex;
-    /* justify-content: space-between; */
+   display: flex;
+    align-items: flex-start;
     padding-left: 2vw;
     gap: 5vw;
 }
@@ -127,6 +127,14 @@
     font-size: 0.8rem;
     color: var(--dark-blue);
     display: none;
+}
+
+#get-more-about{
+    margin-top: 2vw;
+    font-family: 'gochi';
+    font-size: 0.8rem;
+    color: var(--dark-blue);
+    cursor: pointer;
 }
 @media (max-width: 767px) {
     #get-more{
@@ -467,7 +475,6 @@
 	position: absolute;
 	cursor: pointer;
 	top: 40%;
-	z-index: 4;
 	background: none;
 	border: none;
     z-index: 10;
